@@ -1,0 +1,31 @@
+.container{
+  margin-top: 15em;
+}
+
+.title-container{
+    position: absolute;
+    top: 0;
+    height: 200vh;
+    width: 100%;
+    padding-left: 8em;
+    padding-right: 8em;
+}
+
+.navbar {
+
+  position: sticky;
+  top: 0;
+}
+
+.what-is-judo{
+  margin-top: 10em;
+}
+
+.contact-us{
+  background-color: #777;
+  margin-top: 20px;
+}
+
+#contact-us{
+  height: 8em;
+}
