@@ -29,3 +29,7 @@
 #contact-us{
   height: 8em;
 }
+
+a {
+  text-decoration: none;
+}
