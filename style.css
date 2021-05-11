@@ -342,8 +342,8 @@ input {
   display: flex;
   flex-direction: column;
   flex: 1 0 300px;
-  max-width: 500px;
-  min-height: 500px;
+  max-width: 700px;
+  min-height: 800px;
   background: #fff;
   color: #333;
   border-radius: 25px;
@@ -358,7 +358,7 @@ input {
 
 
 .card .card__image {
-  flex: 0 0 300px;
+  flex: 0 0 500px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
