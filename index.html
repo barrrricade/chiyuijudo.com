@@ -1,105 +1,316 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chi Yui Judo</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-  <div class="page-wrapper">
-   <div class="nav-wrapper">
-    <div class="grad-bar"></div>
-    <nav class="navbar">
-      <div class="logo">Logo</div>
-      <div class="menu-toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-      <ul class="nav no-search">
-        <li class="nav-item"><a href="index.html">Home</a></li>
-        <li class="nav-item"><a href="about.html">About</a></li>
-        <li class="nav-item"><a href="#" onclick="openForm()" class="openbtn">Schedule</a></li>
-        <li class="nav-item"><a href="#">Friends</a></li>
-        <li class="nav-item"><a href="contact.html">Contact Us</a></li>
-        <i class="fas fa-search" id="search-icon"></i>
-        <input class="search-input" type="text" placeholder="Search..">
-      </ul>
-    </nav>
-    </div>
-    <div class="headline">
-      <h1>Chi Yui Judo Association | 至柔柔道會</h1>
-      <p>Since 1988</p>
-    </div>
-    <div class="cards">
-      <div class="card">
-        <div class="card__image" style="background-image: url('http://placeimg.com/640/480/any')"></div>
-        <div class="content">
-          <div class="card__title">About Paddy</div>
-          <div class="card__snippet">
-            <ul>
-              <li>Years of training: 20 years</li>
-              <li>Competition experice: 10 years</li>
-              <li>Education: Major in social science</li>
-              <li>Other qualifications: Auxiliary medical service (advanced first aid cert)</li>
+      <div class="navbardrop">
+        <div class="nav-brand">
+          <img src="./assets/images/ChiYuiLogo.png" alt="">
+        </div>
+
+        <div class="nav-collapse">
+          <nav role="navigation">
+            <ul class="nav-list" id="collapse" >
+              <li class="nav-list__item"><a class='nav-link' href="#about-judo">Judo</a></li>
+              <li class="nav-list__item"><a class='nav-link' href="#chan-siu-shing">Chan Siu Shing</a></li>
+              <li class="nav-list__item submenu--trigger"><a class='nav-link' href="#" >Instructors<i class="caret-down-icon" ></i></a>
+                <ul class="submenu">
+                  <li class="nav-list__item" ><a class='nav-link' href="#paddy">Paddy Chan</a></li>
+                  <li class="nav-list__item third-submenu--trigger"><a class='nav-link' href="#instructor2">Instructor 2</a>
+                <!--     <ul class="third-submenu">
+                      <li class="nav-list__item"><a class='nav-link' href="www.google.com">Second level sub 1</a></li>
+                      <li class="nav-list__item"><a class='nav-link' href="www.google.com">Second level sub 2</a></li>
+                      <li class="nav-list__item"><a class='nav-link' href="www.google.com">Second level sub 3</a></li>
+                    </ul> -->
+                  </li>
+                  <!-- <li class="nav-list__item"><a class='nav-link' href="www.google.com">Sub 3</a></li> -->
+                </ul>
+              </li>
+              <li class="nav-list__item"><a class='nav-link' href="#schedule">Schedule</a></li>
+              <li class="nav-list__item"><a class='nav-link' href="gallery.html">Gallery</a></li>
+              <li class="nav-list__item"><a class='nav-link' href="#directions">Directions</a></li>
+              <li class="nav-list__item"><a class='nav-link' href="#friends-chi">Friends</a></li>
             </ul>
+          </nav>
+        </div>
+
+        <div class="nav-toggle">
+          <a class="btn--toggle nav-link" href="#" data-toggle="collapse" data-target="#collapse">
+            <i class="fas fa-bars fa-fw"></i>
+          </a>
+        </div>
+      </div>
+
+
+
+    <div class="banner">
+      <section id="Overview">
+      <!-- <div class="container-banner"> -->
+        <!-- <div class="row"> -->
+          <div class="col"style="text-align:center;width: 200px;height: auto;margin-left: 130px;padding-top: 20px; object-position: 50% 50%">
+            <h1>Welcome to: Chi Yui Judo</h1><br>
+          </div>
+        <!-- </div> -->
+      <!-- </div> -->
+         </section>
+    </div>
+
+
+    <section class="content">
+
+      <div class="inner-content" id="about-judo">
+        <div class="inner-content-text content__TextLeft">
+          <div id="about" class="inter-content-subtitle">
+            About Judo
+          </div>
+
+          <div class="inner-content-title">
+            JUDO
+          </div>
+
+          <div class="inner-content-para">
+            <p>Judo lit the gentle way. Created by Jigoro Kano in 1882 as a way to discipline the physical and mental body as well as ones morals.</p><br>
+            <p>Judo is a modern combat sport that utilises throws, pins, chokes and joint locks. Striking is a part of judo but is only practiced is kata (pre-arranged forms). The Olympics adopted judo as one of its events in 1964 for men and 1992 for women.</p>
+          </div>
+        </div>
+
+        <div class="inner-image-container container__ImageRight">
+          <div class="inner-content-image content__ImageRight">
+            <img class="section-images" src="./assets/images/kano.jpeg" style="object-position: 50% 50%;">
+          </div>
+        </div>
+      </div>
+
+      <div class="hero">
+        <span id="cafe" role="img">
+          <div class="divider">
+            <h1>Chi Yui Judo</h1>
+          </div>
+          <span class="inner">
+          </span>
+        </span>
+      </div>
+
+
+      <div class="inner-content" id="chan-siu-shing">
+        <div class="inner-content-text content__TextRight">
+          <div id="features" class="inter-content-subtitle">
+            Chan Siu Shing Sifu
+          </div>
+
+          <div class="inner-content-title">
+            “Accept Victory and Defeat. Do not pride in victory and do not despair in defeat”
+          </div>
+
+          <div class="inner-content-para">
+            <p>Chan Siu Shing Sifu founded Chi Yui Judo in 1988, being part of the first generation of judokas in hong kong he helped shape the judo associations for today.</p><br>
+            <p>In 1992 Sifu Chan published the first edition of the international judo regulations in Chinese before the IJF had standardized and translated the rules.</p><br>
+            <p>Sifu Chan had passed in 2016 however his teachings and ideology will be forever continued in his family and students</p>
+          </div>
+        </div>
+        <div class="inner-image-container container__ImageLeft">
+          <div class="inner-content-image content__ImageLeft">
+            <img class="section-images" src="./assets/images/Sifu blurr.jpg" style="object-position: top;">
+          </div>
+        </div>
+      </div>
+
+      <div class="inner-content" id="paddy">
+        <div class="inner-content-text content__TextRight">
+          <div id="features" class="inter-content-subtitle">
+            Instructor Bio
+          </div>
+
+          <div class="inner-content-title">
+            Paddy Chan
+          </div>
+
+          <div class="inner-content-para">
+            <ul>
+              <li><p>Years of training: 20 years</p></li>
+              <li><p>Competition experice: 10 years</p></li>
+              <li><p>Education: Major in social science</p></li>
+              <li><p>Other qualifications: Auxiliary medical service (advanced first aid cert)</p></li>
+            </ul><br>
             <h4>Notable awards:</h4>
-            <ol>
-              <li>SCAA -60 1st place</li>
-              <li>Completion of Spartan race Super & sprint</li>
-              <li>Ju no Kata – Silver medalist</li>
-            </ol>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__image" style="background-image: url('http://placeimg.com/640/480/any')"></div>
-        <div class="content">
-          <div class="card__title">About Instructor 2</div>
-          <div class="card__snippet">
-            <ul>
-              <li>Years of training: 20 years</li>
+            <ul><br>
+              <li><p>SCAA -60 1st place</p></li>
+              <li><p>Completion of Spartan race Super & sprint</p></li>
+              <li><p>Ju no Kata – Silver medalist</p></li>
             </ul>
           </div>
         </div>
+        <div class="inner-image-container container__ImageLeft">
+          <div class="inner-content-image content__ImageLeft">
+            <img class="section-images" src="./assets/images/paddy.jpg" style="object-position: 50% 50%;">
+          </div>
+        </div>
+      </div>
+
+      <div class="inner-content" id="instructor2">
+        <div class="inner-content-text content__TextLeft">
+          <div id="about" class="inter-content-subtitle">
+            Instructor Bio
+          </div>
+
+          <div class="inner-content-title">
+            Instructor 2
+          </div>
+
+          <div class="inner-content-para">
+            <ul>
+              <li><p>Years of training: 20 years</p></li>
+              <li><p>Competition experice: 10 years</p></li>
+              <li><p>Education: Major in social science</p></li>
+              <li><p>Other qualifications: Auxiliary medical service (advanced first aid cert)</p></li>
+            </ul><br>
+            <h4>Notable awards:</h4>
+            <ul>
+              <li><p>SCAA -60 1st place</p></li>
+              <li><p>Completion of Spartan race Super & sprint</p></li>
+              <li><p>Ju no Kata – Silver medalist</p></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="inner-image-container container__ImageRight">
+          <div class="inner-content-image content__ImageRight">
+            <img class="section-images" src="./assets/images/kano.jpeg" style="object-position: 50% 50%;">
+          </div>
+        </div>
+      </div>
+
+
+
+    </section>
+
+    <section class="contact-address-area" id="schedule">
+      <div class="container">
+        <div class="sec-title-style1 text-center max-width">
+          <div class="title">Contact Us</div>
+          <div class="text"><div class="decor-left"><span></span></div><p></p><div class="decor-right"><span></span></div></div>
+        </div>
+        <div class="contact-address-box row">
+        <!--Start Single Contact Address Box-->
+          <div class="col-sm-4 single-contact-address-box text-center">
+            <h3>Schedule</h3>
+            <h2>Current schedule - will be notified on Whatsapp due to COVID-19</h2>
+          </div>
+        <!--End Single Contact Address Box-->
+        <!--Start Single Contact Address Box-->
+        <div class="col-sm-4 single-contact-address-box main-branch">
+          <h3>Address</h3>
+          <div class="inner">
+            <ul>
+              <li>
+                <div class="title">
+                  <h4>Address:</h4>
+                </div>
+                <div class="text">
+                  <p>Po on road sports centre 325-329 Po On Rd, Lei Cheng Uk, Cheung Sha Wan</p>
+                </div>
+              </li>
+              <li>
+              <div class="title">
+                <h4>Chinese<br> Address:</h4>
+              </div>
+              <div class="text">
+                <p>Po on road sports centre 325-329 Po On Rd, Lei Cheng Uk, Cheung Sha Wan</p>
+              </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--End Single Contact Address Box-->
+        <!--Start Single Contact Address Box-->
+        <div class="col-sm-4 single-contact-address-box text-center">
+          <div class="icon-holder">
+            <span class="icon-question-2">
+              <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+            </span>
+          </div>
+          <h3>Contact</h3>
+          <h2>Paddy Chan: <br> +852 6501 6186</h2>
+        </div>
+      <!--End Single Contact Address Box-->
       </div>
     </div>
+  </section>
+<!--End Contact Address Area-->
+
+
+
+    <section id= "directions" style="margin-top: 3rem; margin-bottom: 3rem">
+      <div class="directions-title">
+        Directions
+      </div>
+      <div class="swiper-container" style="margin-top: 3rem">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/images/direction_1.jpg" class="centered" alt="a direction image">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/direction_2.jpg" class="centered" alt="a direction image">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/direction_3.jpg" class="centered" alt="a direction image">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/direction_4.jpg" class="centered" alt="a direction image">
+          </div>
+        </div>
+        <div class="swiper-pagination" style="background-color: : red"></div>
+        <div class="swiper-button-prev" style="color: red"></div>
+        <div class="swiper-button-next" style="color: red"></div>
+        <!-- <div class="swiper-scrollbar" style="background-color: red"></div> -->
+      </div>
+    </section>
+
+    <div id="friends-chi">
+      <div class="friends-title">
+          Friends of Chi Yui
+      </div>
+      <section class="friends_care">
+        <div class="column">
+          <div class="icon"><img src="./assets/images/uoft logo.png" alt="uoft">
+          </div>
+          <div class="detail">
+            <h3>Utoronto</h3>
+            <p>https://judo.sa.utoronto.ca/</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="icon"><img src="./assets/images/annex_logo.jpeg" alt="annex">
+          </div>
+          <div class="detail">
+            <h3>Annex Judo Acadamy</h3>
+            <p>https://annexjudoacademy.com/</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="icon"><img src="#" alt="ronin">
+          </div>
+          <div class="detail">
+            <h3>Ronin Judo Club</h3>
+            <p>https://www.facebook.com/groups</p>
+          </div>
+        </div>
+      </section>
+
   </div>
-  <script>
 
-    $("#search-icon").click(function() {
-      $(".nav").toggleClass("search");
-      $(".nav").toggleClass("no-search");
-      $(".search-input").toggleClass("search-active");
-    });
 
-    $('.menu-toggle').click(function(){
-       $(".nav").toggleClass("mobile-nav");
-       $(this).toggleClass("is-active");
-    });
-    function openForm()
-      {
-        document.getElementById("form").style.display="block";
-      }
-
-      function closeForm()
-      {
-        document.getElementById("form").style.display="none";
-      }
-  </script>
-  <div class="form-popup" id="form">
-    <form class="form-container">
-      <p>Current schedule - will be notified on Whatsapp due to COVID-19</p>
-      <button type="button" class="btn-cancel" onclick="closeForm()" > Close </button>
-    </form>
-  </div>
+  <script src="script.js"></script>
 </body>
 </html>
