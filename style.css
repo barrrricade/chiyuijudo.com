@@ -299,8 +299,6 @@ a{
   margin:0 auto;
   width: 100%;
   height: auto;
-  margin-top:0;
-
 }
 
 
@@ -533,7 +531,7 @@ a{
   }
 }
 
-.hero #cafe {
+.seiza #cafe {
   width: 100%;
   display: inline-block;
   vertical-align: middle;
@@ -545,37 +543,37 @@ a{
   background-repeat: no-repeat;
   margin-top: 30px;
 }
-.hero #cafe .inner {
+.seiza #cafe .inner {
   padding-top: 63.35%; /* height/width of image */
   display: block;
   height: 0;
 }
 
 /* default screen, non-retina */
-.hero #cafe { background-image: url("./assets/images/all seiza.jpg"); }
+.seiza #cafe { background-image: url("./assets/images/all seiza.jpg"); }
 
 @media only screen and (max-width: 320px) {
     /* Small screen, non-retina */
-    .hero #cafe { background-image: url("./assets/images/all seiza.jpg"); }
+    .seiza #cafe { background-image: url("./assets/images/all seiza.jpg"); }
 }
 @media
 only screen and (min-resolution: 2dppx) and (max-width: 320px) {
     /* Small screen, retina */
-    .hero #cafe { background-image: url("./assets/images/all seiza.jpg"); }
+    .seiza #cafe { background-image: url("./assets/images/all seiza.jpg"); }
 }
 @media only screen and (min-width: 321px) and (max-width: 538px) {
     /* Medium screen, non-retina */
-    .hero #cafe { background-image: url("./assets/images/all seiza.jpg"); }
+    .seiza #cafe { background-image: url("./assets/images/all seiza.jpg"); }
 }
 @media
 only screen and (min-resolution: 2dppx) and (min-width: 321px) and (max-width: 538px) {
     /* Medium screen, retina */
-    .hero #cafe { background-image: url("./assets/images/all seiza.jpg"); }
+    .seiza #cafe { background-image: url("./assets/images/all seiza.jpg"); }
 }
 @media
 only screen and (min-resolution: 2dppx) and (min-width: 539px) {
     /* Large screen, retina */
-    .hero #cafe { background-image: url("./assets/images/all seiza.jpg"); }
+    .seiza #cafe { background-image: url("./assets/images/all seiza.jpg"); }
 }
 
 .divider {
