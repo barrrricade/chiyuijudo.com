@@ -22,7 +22,7 @@ a{
   height: auto;
   position: relative;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: wrap;
   align-items: center;
   justify-content: space-between;
   color: white;
@@ -229,7 +229,7 @@ a{
     width: 100%;
     padding: 16px;
     opacity: 1;
-    font-size: 23px;
+    font-size: 20px;
   }
 
   .submenu {
@@ -589,8 +589,8 @@ only screen and (min-resolution: 2dppx) and (min-width: 539px) {
 
 .centered {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .swiper-slide img {
@@ -610,6 +610,9 @@ only screen and (min-resolution: 2dppx) and (min-width: 539px) {
   /*font-family: "Poppins", sans-serif;*/
 }
 
+.direction-img{
+  width: 100%;
+}
 
 /*friends section*/
 #friends-chi {
