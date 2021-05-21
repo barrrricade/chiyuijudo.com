@@ -7,8 +7,10 @@
   box-sizing:border-box;
   font-family: 'Roboto', sans-serif;
 }
+
+
 a{
-  text-decoration:none;
+  text-decoration:none !important;
 }
 
 
@@ -20,7 +22,7 @@ a{
   height: auto;
   position: relative;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: wrap;
   align-items: center;
   justify-content: space-between;
   color: white;
@@ -48,8 +50,6 @@ a{
 .nav-link:hover {
   color: red;
 }
-
-
 
 
 
@@ -229,7 +229,7 @@ a{
     width: 100%;
     padding: 16px;
     opacity: 1;
-    font-size: 23px;
+    font-size: 20px;
   }
 
   .submenu {
@@ -287,8 +287,8 @@ a{
 
 
 .banner {
-  /*background-color: #F0F8FF;*/
-  background-image: url("./assets/images/Banner.jpg");
+  margin-top: 100px;
+  background-image: url("./assets/images/banner.jpg");
   background-size: cover;
   background-position: center;
   padding: 140px 0 100px;
@@ -296,8 +296,6 @@ a{
   margin:0 auto;
   width: 100%;
   height: auto;
-  margin-top:0;
-
 }
 
 
@@ -305,7 +303,7 @@ a{
 
 @media (min-width: 576px) {
   .banner {
-    padding: 200px 0;
+    padding-top: 200px;
     width: 100%;
     height: 100vh;
     min-height: 350px;
@@ -421,8 +419,12 @@ a{
 
 }
 
-@media screen and (min-width: 820px) {
+.instructor-banner-text{
 
+}
+
+
+@media screen and (min-width: 820px) {
 
   .content {
     padding: 0 68px 0 68px;
@@ -526,7 +528,7 @@ a{
   }
 }
 
-.hero #cafe {
+.seiza #cafe {
   width: 100%;
   display: inline-block;
   vertical-align: middle;
@@ -538,37 +540,37 @@ a{
   background-repeat: no-repeat;
   margin-top: 30px;
 }
-.hero #cafe .inner {
+.seiza #cafe .inner {
   padding-top: 63.35%; /* height/width of image */
   display: block;
   height: 0;
 }
 
 /* default screen, non-retina */
-.hero #cafe { background-image: url("./assets/images/uchimata.jpg"); }
+.seiza #cafe { background-image: url("./assets/images/all seiza.jpg"); }
 
 @media only screen and (max-width: 320px) {
     /* Small screen, non-retina */
-    .hero #cafe { background-image: url("./assets/images/uchimata.jpg"); }
+    .seiza #cafe { background-image: url("./assets/images/all seiza.jpg"); }
 }
 @media
 only screen and (min-resolution: 2dppx) and (max-width: 320px) {
     /* Small screen, retina */
-    .hero #cafe { background-image: url("./assets/images/uchimata.jpg"); }
+    .seiza #cafe { background-image: url("./assets/images/all seiza.jpg"); }
 }
 @media only screen and (min-width: 321px) and (max-width: 538px) {
     /* Medium screen, non-retina */
-    .hero #cafe { background-image: url("./assets/images/uchimata.jpg"); }
+    .seiza #cafe { background-image: url("./assets/images/all seiza.jpg"); }
 }
 @media
 only screen and (min-resolution: 2dppx) and (min-width: 321px) and (max-width: 538px) {
     /* Medium screen, retina */
-    .hero #cafe { background-image: url("./assets/images/uchimata.jpg"); }
+    .seiza #cafe { background-image: url("./assets/images/all seiza.jpg"); }
 }
 @media
 only screen and (min-resolution: 2dppx) and (min-width: 539px) {
     /* Large screen, retina */
-    .hero #cafe { background-image: url("./assets/images/uchimata.jpg"); }
+    .seiza #cafe { background-image: url("./assets/images/all seiza.jpg"); }
 }
 
 .divider {
@@ -587,8 +589,8 @@ only screen and (min-resolution: 2dppx) and (min-width: 539px) {
 
 .centered {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .swiper-slide img {
@@ -608,14 +610,11 @@ only screen and (min-resolution: 2dppx) and (min-width: 539px) {
   /*font-family: "Poppins", sans-serif;*/
 }
 
+.direction-img{
+  width: 100%;
+}
 
 /*friends section*/
-
-
-
-
-
-
 #friends-chi {
     width: 100%;
     position: relative;
